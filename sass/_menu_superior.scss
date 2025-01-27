@@ -4,7 +4,14 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #333;
+    background-color: $cabecera_fondo;
+    #idlogo{
+        background-image: url("../Imagenes/logo.png");
+        width: 50px;
+        height: 50px;
+        background-size: cover; /* Para que la imagen cubra todo el fondo */
+        background-repeat: no-repeat;
+    }
     ul{
         list-style-type: none;
         margin: 0;
@@ -16,19 +23,17 @@ nav {
             margin: 0;
             a{
                 display: block;
-                color: white;
+                color: $color_texto_principal;
                 text-decoration: none;
                 padding: 15px 20px;
                 transition: background-color 0.3s ease;
             }
             a:hover {
-                background-color: #575757;
+                background-color: $cabecera_fondo_hover;
             }
         }
     }
-}
-
-/*  ICONO DE LA CAMPANA */
+    /*  ICONO DE LA CAMPANA */
 /* From Uiverse.io by catraco */ 
 /*------ Settings ------*/
 .container {
@@ -92,6 +97,9 @@ nav {
     }
   }
 /* FIN ICONO CAMPANA */
+}
+
+
 
 
 

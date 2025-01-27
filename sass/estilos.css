@@ -1,9 +1,33 @@
+/* 83% */
+body {
+  display: flex;
+  width: 100%;
+  background-color: #001A6E;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 83% */
 nav {
   position: sticky;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #333;
+  background-color: #07D6C9;
+  /*  ICONO DE LA CAMPANA */
+  /* From Uiverse.io by catraco */
+  /*------ Settings ------*/
+  /* ------ On check event ------ */
+  /* ------ Hide the default checkbox ------ */
+  /* ------ Animation ------ */
+  /* FIN ICONO CAMPANA */
+}
+nav #idlogo {
+  background-image: url("../Imagenes/logo.png");
+  width: 50px;
+  height: 50px;
+  background-size: cover; /* Para que la imagen cubra todo el fondo */
+  background-repeat: no-repeat;
 }
 nav ul {
   list-style-type: none;
@@ -18,19 +42,15 @@ nav ul li {
 }
 nav ul li a {
   display: block;
-  color: white;
+  color: black;
   text-decoration: none;
   padding: 15px 20px;
   transition: background-color 0.3s ease;
 }
 nav ul li a:hover {
-  background-color: #575757;
+  background-color: #27928b;
 }
-
-/*  ICONO DE LA CAMPANA */
-/* From Uiverse.io by catraco */
-/*------ Settings ------*/
-.container {
+nav .container {
   --color: #a5a5b0;
   --size: 30px;
   display: flex;
@@ -44,37 +64,28 @@ nav ul li a:hover {
           user-select: none;
   fill: var(--color);
 }
-
-.container .bell-regular {
+nav .container .bell-regular {
   position: absolute;
   animation: keyframes-fill 0.5s;
 }
-
-.container .bell-solid {
+nav .container .bell-solid {
   position: absolute;
   display: none;
   animation: keyframes-fill 0.5s;
 }
-
-/* ------ On check event ------ */
-.container input:checked ~ .bell-regular {
+nav .container input:checked ~ .bell-regular {
   display: none;
 }
-
-.container input:checked ~ .bell-solid {
+nav .container input:checked ~ .bell-solid {
   display: block;
 }
-
-/* ------ Hide the default checkbox ------ */
-.container input {
+nav .container input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
   height: 0;
   width: 0;
 }
-
-/* ------ Animation ------ */
 @keyframes keyframes-fill {
   0% {
     opacity: 0;
@@ -89,4 +100,10 @@ nav ul li a:hover {
     transform: rotate(15deg);
   }
 }
-/* FIN ICONO CAMPANA *//*# sourceMappingURL=estilos.css.map */
+
+/* 83% */
+.contenido {
+  background-color: #6296D9;
+  height: 700px;
+  width: 80%;
+}/*# sourceMappingURL=estilos.css.map */
