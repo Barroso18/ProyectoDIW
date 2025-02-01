@@ -107,6 +107,10 @@ nav .container input {
   height: 700px;
   width: 80%;
 }
+.contenido .cabecera {
+  display: flex;
+  flex-direction: row;
+}
 .contenido .cabecera .imagencabecera {
   background-image: url("../Imagenes/Java_condiciones.png");
   width: 200px;

@@ -4,6 +4,8 @@
     height: 700px;
     width: 80%;
     .cabecera{
+        display: flex;
+        flex-direction: row;
         .imagencabecera{
             background-image: url("../Imagenes/Java_condiciones.png");
             width: 200px;
