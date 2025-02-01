@@ -1,11 +1,10 @@
-
 body{
     display: flex;
     background-color: #001A6E;
     color: white;
     border: 1px solid white;
     justify-content: center;
-    margin-top: 5%;
+    
 }
 #contenedorPrincipal{
     border: 1px solid white;
@@ -13,11 +12,7 @@ body{
     background-color: #6296D9;
     display: flex;
     justify-content: center;
-    padding-top: 70px;
-    padding-bottom: 70px;
-    
-
-    
+  
 }
 
 #contenedorLogo {
@@ -34,4 +29,3 @@ body{
         object-fit: cover; /* Ajusta la imagen para que se adapte al contenedor */
       }
   }
-  
