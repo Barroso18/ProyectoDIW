@@ -111,8 +111,27 @@ nav .container input {
   display: flex;
   flex-direction: row;
 }
-.contenido .cabecera .imagencabecera {
+.contenido .cabecera .imagencabecera_tema {
   background-image: url("../Imagenes/Java_condiciones.png");
+  width: 200px;
+  height: 200px;
+  background-size: cover; /* Para que la imagen cubra todo el fondo */
+  background-repeat: no-repeat;
+}
+
+/* 83% */
+.contenido {
+  background-color: #6296D9;
+  height: 700px;
+  width: 80%;
+}
+.contenido .cabecera {
+  display: flex;
+  flex-direction: row;
+  background-color: #E1FFBB;
+}
+.contenido .cabecera .imagencabecera_asignatura {
+  background-image: url("../Imagenes/Java.jpg");
   width: 200px;
   height: 200px;
   background-size: cover; /* Para que la imagen cubra todo el fondo */

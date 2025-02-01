@@ -1,0 +1,31 @@
+@import '_variables_colores';
+.contenido{
+    background-color: $color_fondo_contenido;
+    height: 700px;
+    width: 80%;
+    .cabecera{
+        display: flex;
+        flex-direction: row;
+        background-color: $color_fondo_header;
+        .imagencabecera_asignatura{
+            background-image: url("../Imagenes/Java.jpg");
+            width: 200px;
+            height: 200px;
+            background-size: cover; /* Para que la imagen cubra todo el fondo */
+            background-repeat: no-repeat;
+        }
+    }
+    .temario{
+        @for $i from 1 through $l {
+            /* Esto hay que cambiarlo*/
+            #foto#{$i} {
+                display: flex;
+                $foto: "../Imagenes/"+nth($fotos, $i);
+                background-image: url(#{$foto});
+                background-size: cover; /* Para que la imagen cubra todo el fondo */
+                background-repeat: no-repeat;
+                width: 100%;
+            }
+        }
+    }
+}
