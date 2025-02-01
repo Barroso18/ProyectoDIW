@@ -3,4 +3,13 @@
     background-color: $color_fondo_contenido;
     height: 700px;
     width: 80%;
+    .cabecera{
+        .imagencabecera{
+            background-image: url("../Imagenes/Java_condiciones.png");
+            width: 200px;
+            height: 200px;
+            background-size: cover; /* Para que la imagen cubra todo el fondo */
+            background-repeat: no-repeat;
+        }
+    }
 }
