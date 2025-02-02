@@ -1,7 +1,7 @@
 @import '_variables_colores';
 .contenido{
     background-color: $color_fondo_contenido;
-    height: 700px;
+    height: 80%;
     width: 80%;
     .cabecera{
         display: flex;
@@ -15,5 +15,34 @@
             background-repeat: no-repeat;
         }
     }
-    
+    .temario{
+        $fotos: "Java.jpg","Java_condiciones.png","clasesJava.png";
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        @for $i from 1 through 3 {
+            .tema#{$i}{
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                height: 20%;
+                .imagentema#{$i} {
+                    display: flex;
+                    $foto: "../Imagenes/"+nth($fotos, $i);
+                    background-image: url(#{$foto});
+                    background-size: cover; //Para que la imagen cubra todo el fondo 
+                    background-repeat: no-repeat;
+                    width: 200px;
+                    height: 200px;
+                }
+                .textoTema{
+                    h3 a {
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+            }
+            
+        }
+    }
 }

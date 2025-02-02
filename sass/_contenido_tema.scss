@@ -1,7 +1,8 @@
 @import '_variables_colores';
+
 .contenido{
     background-color: $color_fondo_contenido;
-    height: 700px;
+    height: 80%;
     width: 80%;
     .cabecera{
         display: flex;
@@ -14,4 +15,9 @@
             background-repeat: no-repeat;
         }
     }
+    /*frame{
+        display: flex;
+    }*/
+    
+    
 }
