@@ -6347,18 +6347,20 @@ html.is-reveal-open body {
 
 /* 83% */
 nav {
+  display: flex;
+  height: 20%;
   position: sticky;
   top: 0;
   left: 0;
   width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /*position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;*/
   background-color: #07D6C9;
-  /*  ICONO DE LA CAMPANA */
-  /* From Uiverse.io by catraco */
-  /*------ Settings ------*/
-  /* ------ On check event ------ */
-  /* ------ Hide the default checkbox ------ */
-  /* ------ Animation ------ */
-  /* FIN ICONO CAMPANA */
 }
 nav #idlogo {
   background-image: url("../Imagenes/logo.png");
@@ -6370,16 +6372,31 @@ nav #idlogo {
 nav ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 5px;
   display: flex;
   text-align: center;
   justify-content: center;
+  display: flex;
+  height: 100%;
 }
 nav ul li {
   margin: 0;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  /*  ICONO DE LA CAMPANA */
+  /* From Uiverse.io by catraco */
+  /*------ Settings ------*/
+  /* ------ On check event ------ */
+  /* ------ Hide the default checkbox ------ */
+  /* ------ Animation ------ */
+  /* FIN ICONO CAMPANA */
 }
 nav ul li a {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: black;
   text-decoration: none;
   padding: 15px 20px;
@@ -6388,13 +6405,12 @@ nav ul li a {
 nav ul li a:hover {
   background-color: #27928b;
 }
-nav .container {
+nav ul li .container {
   --color: #a5a5b0;
-  --size: 30px;
+  --size: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
   cursor: pointer;
   font-size: var(--size);
   -webkit-user-select: none;
@@ -6402,23 +6418,20 @@ nav .container {
           user-select: none;
   fill: var(--color);
 }
-nav .container .bell-regular {
-  position: absolute;
+nav ul li .container .bell-regular {
   animation: keyframes-fill 0.5s;
 }
-nav .container .bell-solid {
-  position: absolute;
+nav ul li .container .bell-solid {
   display: none;
   animation: keyframes-fill 0.5s;
 }
-nav .container input:checked ~ .bell-regular {
+nav ul li .container input:checked ~ .bell-regular {
   display: none;
 }
-nav .container input:checked ~ .bell-solid {
+nav ul li .container input:checked ~ .bell-solid {
   display: block;
 }
-nav .container input {
-  position: absolute;
+nav ul li .container input {
   opacity: 0;
   cursor: pointer;
   height: 0;
@@ -6581,6 +6594,30 @@ nav .container input {
 .contenido .temario .tema3 .textoTema h3 a {
   text-decoration: none;
   color: black;
+}
+
+footer {
+  background-color: #021551;
+  height: 90px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 10px;
+  bottom: 0;
+  bottom: 0;
+  width: 100%;
+  right: 0;
+}
+footer #texto {
+  color: white;
+  font-size: 20px;
+}
+footer #redesSociales {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding-right: 80px;
 }
 
 body {
