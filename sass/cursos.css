@@ -1,0 +1,125 @@
+/* 83% */
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #07D6C9;
+  /*  ICONO DE LA CAMPANA */
+  /* From Uiverse.io by catraco */
+  /*------ Settings ------*/
+  /* ------ On check event ------ */
+  /* ------ Hide the default checkbox ------ */
+  /* ------ Animation ------ */
+  /* FIN ICONO CAMPANA */
+}
+nav #idlogo {
+  background-image: url("../Imagenes/logo.png");
+  width: 50px;
+  height: 50px;
+  background-size: cover; /* Para que la imagen cubra todo el fondo */
+  background-repeat: no-repeat;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+nav ul li {
+  margin: 0;
+}
+nav ul li a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  padding: 15px 20px;
+  transition: background-color 0.3s ease;
+}
+nav ul li a:hover {
+  background-color: #27928b;
+}
+nav .container {
+  --color: #a5a5b0;
+  --size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  font-size: var(--size);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  fill: var(--color);
+}
+nav .container .bell-regular {
+  position: absolute;
+  animation: keyframes-fill 0.5s;
+}
+nav .container .bell-solid {
+  position: absolute;
+  display: none;
+  animation: keyframes-fill 0.5s;
+}
+nav .container input:checked ~ .bell-regular {
+  display: none;
+}
+nav .container input:checked ~ .bell-solid {
+  display: block;
+}
+nav .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+@keyframes keyframes-fill {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    transform: rotate(25deg);
+  }
+  50% {
+    transform: rotate(-20deg) scale(1.2);
+  }
+  75% {
+    transform: rotate(15deg);
+  }
+}
+
+footer {
+  background-color: #021551;
+  color: white;
+  height: 90px;
+  padding-top: 40px;
+  padding-left: 10px;
+}
+footer #redesSociales {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  color: white;
+}
+
+body {
+  background-color: #001A6E;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #021551;
+  color: white;
+  height: 90px;
+  padding-top: 40px;
+  padding-left: 10px;
+}
+footer #redesSociales {
+  display: flex;
+  color: white;
+}/*# sourceMappingURL=cursos.css.map */
