@@ -27,5 +27,13 @@
         display: flex;
     }*/
     
-    
+    .contenidoTema{
+        .seccion {
+            ul{
+                li{
+                    list-style: none;
+                }
+            }
+        }
+    }
 }

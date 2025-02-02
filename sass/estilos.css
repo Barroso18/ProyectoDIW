@@ -6467,6 +6467,9 @@ nav .container input {
   background-size: cover; /* Para que la imagen cubra todo el fondo */
   background-repeat: no-repeat;
 }
+.contenido .contenidoTema .seccion ul li {
+  list-style: none;
+}
 
 /* 83% */
 .contenido {
