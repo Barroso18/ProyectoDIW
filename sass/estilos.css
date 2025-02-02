@@ -6596,6 +6596,30 @@ nav ul li .container input {
   color: black;
 }
 
+footer {
+  background-color: #021551;
+  height: 90px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 10px;
+  bottom: 0;
+  bottom: 0;
+  width: 100%;
+  right: 0;
+}
+footer #texto {
+  color: white;
+  font-size: 20px;
+}
+footer #redesSociales {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding-right: 80px;
+}
+
 body {
   display: flex;
   width: 100%;
