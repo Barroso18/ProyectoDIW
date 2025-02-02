@@ -5,12 +5,20 @@
     height: 80%;
     width: 80%;
     .cabecera{
+        border-radius: 20px;
         display: flex;
+        height: 40%;
         flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-color: $color_fondo_header;
+        padding: 2%;
         .imagencabecera_tema{
+            border-radius: 20px;
             background-image: url("../Imagenes/Java_condiciones.png");
-            width: 200px;
-            height: 200px;
+            width: 30%;
+            height: 300px;
+            padding: 2%;
             background-size: cover; /* Para que la imagen cubra todo el fondo */
             background-repeat: no-repeat;
         }

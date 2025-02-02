@@ -6449,13 +6449,21 @@ nav .container input {
   }*/
 }
 .contenido .cabecera {
+  border-radius: 20px;
   display: flex;
+  height: 40%;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #E1FFBB;
+  padding: 2%;
 }
 .contenido .cabecera .imagencabecera_tema {
+  border-radius: 20px;
   background-image: url("../Imagenes/Java_condiciones.png");
-  width: 200px;
-  height: 200px;
+  width: 30%;
+  height: 300px;
+  padding: 2%;
   background-size: cover; /* Para que la imagen cubra todo el fondo */
   background-repeat: no-repeat;
 }
@@ -6465,18 +6473,31 @@ nav .container input {
   background-color: #6296D9;
   height: 80%;
   width: 80%;
+  padding: 2%;
 }
 .contenido .cabecera {
+  border-radius: 20px;
   display: flex;
+  height: 30%;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
   background-color: #E1FFBB;
+  padding: 2%;
 }
 .contenido .cabecera .imagencabecera_asignatura {
+  border-radius: 20px;
   background-image: url("../Imagenes/Java.jpg");
-  width: 200px;
-  height: 200px;
+  width: 23%;
+  height: 300px;
+  padding: 2%;
   background-size: cover; /* Para que la imagen cubra todo el fondo */
   background-repeat: no-repeat;
+}
+.contenido .cabecera .textocabecera {
+  padding: 2%;
+  width: 70%;
+  align-items: flex-start;
 }
 .contenido .temario {
   display: flex;
@@ -6488,14 +6509,21 @@ nav .container input {
   flex-direction: row;
   width: 100%;
   height: 20%;
+  padding: 2%;
 }
 .contenido .temario .tema1 .imagentema1 {
   display: flex;
   background-image: url(../Imagenes/Java.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  border-radius: 20px;
   width: 200px;
   height: 200px;
+  padding: 2%;
+}
+.contenido .temario .tema1 .textoTema {
+  padding: 2%;
+  width: 70%;
 }
 .contenido .temario .tema1 .textoTema h3 a {
   text-decoration: none;
@@ -6506,14 +6534,21 @@ nav .container input {
   flex-direction: row;
   width: 100%;
   height: 20%;
+  padding: 2%;
 }
 .contenido .temario .tema2 .imagentema2 {
   display: flex;
   background-image: url(../Imagenes/Java_condiciones.png);
   background-size: cover;
   background-repeat: no-repeat;
+  border-radius: 20px;
   width: 200px;
   height: 200px;
+  padding: 2%;
+}
+.contenido .temario .tema2 .textoTema {
+  padding: 2%;
+  width: 70%;
 }
 .contenido .temario .tema2 .textoTema h3 a {
   text-decoration: none;
@@ -6524,14 +6559,21 @@ nav .container input {
   flex-direction: row;
   width: 100%;
   height: 20%;
+  padding: 2%;
 }
 .contenido .temario .tema3 .imagentema3 {
   display: flex;
   background-image: url(../Imagenes/clasesJava.png);
   background-size: cover;
   background-repeat: no-repeat;
+  border-radius: 20px;
   width: 200px;
   height: 200px;
+  padding: 2%;
+}
+.contenido .temario .tema3 .textoTema {
+  padding: 2%;
+  width: 70%;
 }
 .contenido .temario .tema3 .textoTema h3 a {
   text-decoration: none;
