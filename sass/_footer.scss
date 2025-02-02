@@ -1,14 +1,26 @@
 footer{
     background-color: #021551;
-    color: white;
     height: 90px;
-    padding-top:40px;
-    padding-left: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 10px;
+    bottom: 0;
+    position: absolute;
+    bottom: 0;
+    width: 98%;
+    right: 0;
+    #texto{
+        color: white;
+        font-size: 20px;
+    }
+    
     #redesSociales{
         display: flex;
         flex-direction: row;
-        justify-content: flex-end;
-        color: white;
+        gap: 20px;
+        padding-right: 80px;
         
     }
 
