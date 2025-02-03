@@ -26,12 +26,42 @@
     /*frame{
         display: flex;
     }*/
-    
+    .barraSuperiorContenido{
+        display: flex;
+        flex-direction: row;
+        height: 56px;
+        a{ 
+            display: flex;
+            flex-direction: row;
+            height: 56px;
+            text-decoration: none;
+            color: black;
+            #flecha{
+                display: flex;
+                align-items: center;
+                height: 32px;
+            }
+            h2{
+                font-size: 32px;
+                max-height: 32px;
+            }
+        }
+    }
     .contenidoTema{
         .seccion {
             ul{
                 li{
                     list-style: none;
+                    display: flex;
+                    width: 80%;
+                    align-items: center;
+                    flex-direction: column;
+                    .elemento{
+                        width: 80%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                    }
                 }
             }
         }
