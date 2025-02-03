@@ -175,7 +175,6 @@ body {
 #contenedorContenido #contenedorCursos .card {
   width: 250px;
   height: 250px;
-  background-image: url(../Imagenes/Java.jpg);
 }
 #contenedorContenido #contenedorCursos .card img {
   width: 70%;
