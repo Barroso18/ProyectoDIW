@@ -45,11 +45,17 @@
   font-size: 20px;
 }
 #introducirDatos input {
-  border-radius: 5px;
+  border-radius: 12px;
   width: 300px;
   height: 30px;
   background-color: #91ece6;
   color: #069e94;
+  z-index: 1;
+}
+#introducirDatos img {
+  position: absolute;
+  z-index: 2;
+  right: 39.5%;
 }
 
 * {
