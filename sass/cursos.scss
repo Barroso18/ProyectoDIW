@@ -3,7 +3,7 @@
 @import '../node_modules/foundation-sites/scss/foundation.scss';
 @import '../node_modules/foundation-sites/scss/util/util';
 @import '../node_modules/foundation-sites/scss/components/card';
-
+@include foundation-everything;
 
 body{
     background-color: #001A6E;
@@ -22,35 +22,67 @@ body{
     margin-top: 3%;
     margin-bottom: 3%;
     border-radius: 10px;
+    button{
+        justify-content: left;
+        background-color: #ebffd2;
+        height: 50px;
+        width: auto;
+        padding: 10px;
+        border-radius: 10px;
+    }
     h1{
         color: white;
-        padding-left: 50px ;
+        padding-left: 20px ;
         font-size: 40px;
-    }
-    hr {
-        border: 0;
-        height: 2px;
-        background-color: #ffffff;
     }
     #contenedorCursos{
         display:flex;
         flex-wrap: wrap;
-        gap: 80px;
+        gap: 50px;
         justify-content: center;
         
-        
-            .card {
-                width: calc(28.33% - 20px);
-                background-color: #E1FFBB;
-                border-radius: 12px;
-                .card-section{
-                    padding-left: 20px;
+        .card {
+            width: calc(24.33% - 20px);
+            background-color: #E1FFBB;
+            border-radius: 12px;
+            object-fit: cover;
+           
+            .card-section {
+                padding-left: 20px;
+                #barraProgreso{
+                    display: flex;
+                    gap: 10px;
+                    align-items: center;
+                    .progress{
+                        width: 80%;
+                        border-radius: 10px;
+                    }
+                    .progress-meter {
+                        background-color: #35c1b7; /* Color de la barra de progreso */
+                        border-radius: 10px; /* Bordes redondeados para la barra */
+                    }
+                    .progress-text {
+                        text-align: center; 
+                        color:#3faea7;
+                    }
                 }
-                img{
-                    width: 100%;  // La imagen ocupará todo el ancho de la tarjeta
-                    height: auto; // Mantener la proporción
-                    border-radius: 8px 8px 0 0; // Bordes redondeados arriba
+                h2{
+                    color: #27928b;
                 }
-              }
+                p{
+                    font-size: 20px;
+                    color: #27928b;
+                }
+                h3{
+                    font-size: 20px;
+                }
+            }
+            img {
+                width: 100%;
+                height: 200px;
+                object-fit: cover; // Asegura que la imagen llene el espacio sin deformarse
+                border-radius: 8px 8px 0 0;
+            }
+        }
     }
 }
