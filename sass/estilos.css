@@ -6797,10 +6797,34 @@ nav ul li .container input {
   display: flex;
   align-items: center;
   height: 32px;
+  margin: 1%;
+  padding: 1%;
+}
+.contenido .barraSuperiorContenido a #flecha img {
+  margin: 1%;
 }
 .contenido .barraSuperiorContenido a h2 {
+  margin: 1%;
   font-size: 32px;
   max-height: 32px;
+}
+.contenido .contenidoTema hr {
+  color: #000;
+  background: #000;
+  height: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+.contenido .contenidoTema .seccion h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1%;
+}
+.contenido .contenidoTema .seccion h3 img {
+  margin: 1%;
+  width: 16px;
+  height: 16px;
 }
 .contenido .contenidoTema .seccion ul li {
   list-style: none;
@@ -6843,6 +6867,11 @@ nav ul li .container input {
   display: flex;
   align-items: center;
   height: 32px;
+  margin: 1%;
+  padding: 1%;
+}
+.contenido .barraSuperiorContenido a #flecha img {
+  margin: 1%;
 }
 .contenido .barraSuperiorContenido a h2 {
   font-size: 32px;
