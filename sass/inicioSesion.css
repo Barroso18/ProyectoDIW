@@ -83,4 +83,15 @@ body {
   margin: 0 auto; /* Centra el contenedor horizontalmente */
   box-sizing: border-box;
   border-radius: 10px;
+}
+
+@media (max-width: 500px) {
+  #contenedorPrincipal {
+    background-color: #6296D9;
+    width: 80%; /* Ocupa todo el ancho disponible */
+    height: 100%;
+  }
+  #contenedorPrincipal h2 {
+    font-size: 32px;
+  }
 }/*# sourceMappingURL=inicioSesion.css.map */
