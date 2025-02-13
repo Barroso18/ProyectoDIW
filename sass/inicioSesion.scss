@@ -24,6 +24,15 @@ body {
     margin: 0 auto; /* Centra el contenedor horizontalmente */
     box-sizing: border-box;
     border-radius: 10px;
+    a{
+        button{
+            width: 150px;
+            height: 40px;
+            background-color: #E1FFBB;
+            border-radius: 10px;
+        }
+
+    }
 }
 @media (max-width:500px){
     #contenedorPrincipal {
@@ -31,7 +40,7 @@ body {
         width: 80%; /* Ocupa todo el ancho disponible */
         height: 100%;
         h2{
-            font-size: 32px;
+            font-size: 29px;
         }
     }
 }

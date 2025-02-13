@@ -9,16 +9,9 @@
         font-size: 45px;
         padding-bottom: 10px;
     }
-    button{
-        width: 50%;
-        height: 40px;
-        border-radius: 10px;
-        background-color:#E1FFBB;
-        
-    }
+    
     
 }
-
 
 #contenedorLogo {
     width: 300px; /* Ajusta el tamaño del logo */
@@ -57,5 +50,20 @@
         position: absolute;
         z-index: 2;
         right: 39.5%;
+    }
+}
+@media (max-width:500px){
+    #contenedorInicio{
+        h2{
+            font-size: 25px;
+            padding-bottom: 10px;
+        }
+    }
+    #introducirDatos{
+        img{
+            position: absolute;
+            z-index: 2;
+            right: 15%;
+        }
     }
 }

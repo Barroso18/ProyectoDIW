@@ -11,12 +11,6 @@
   font-size: 45px;
   padding-bottom: 10px;
 }
-#contenedorInicio button {
-  width: 50%;
-  height: 40px;
-  border-radius: 10px;
-  background-color: #E1FFBB;
-}
 
 #contenedorLogo {
   width: 300px; /* Ajusta el tamaño del logo */
@@ -58,6 +52,17 @@
   right: 39.5%;
 }
 
+@media (max-width: 500px) {
+  #contenedorInicio h2 {
+    font-size: 25px;
+    padding-bottom: 10px;
+  }
+  #introducirDatos img {
+    position: absolute;
+    z-index: 2;
+    right: 15%;
+  }
+}
 * {
   margin: 0; /* Elimina cualquier margen por defecto */
 }
@@ -84,6 +89,12 @@ body {
   box-sizing: border-box;
   border-radius: 10px;
 }
+#contenedorPrincipal a button {
+  width: 150px;
+  height: 40px;
+  background-color: #E1FFBB;
+  border-radius: 10px;
+}
 
 @media (max-width: 500px) {
   #contenedorPrincipal {
@@ -92,6 +103,6 @@ body {
     height: 100%;
   }
   #contenedorPrincipal h2 {
-    font-size: 32px;
+    font-size: 29px;
   }
 }/*# sourceMappingURL=inicioSesion.css.map */

@@ -4,18 +4,17 @@
 @import '../node_modules/foundation-sites/scss/util/util';
 @import '../node_modules/foundation-sites/scss/components/card';
 @include foundation-everything;
-
 body{
+    @include flex;
     background-color: #001A6E;
-    display: flex;
     height: 100%;
-    flex-direction: column;
+    @include flex-direction(column);
     align-items: center;
 }
 #contenedorContenido{
+    @include flex;
     background-color: #6296D9;
-    display: flex;
-    flex-direction: column;
+    @include flex-direction(column);
     height: 80%;
     width: 80%;
     padding: 2%;
@@ -36,7 +35,7 @@ body{
         font-size: 40px;
     }
     #contenedorCursos{
-        display:flex;
+        @include flex;
         flex-wrap: wrap;
         gap: 50px;
         justify-content: center;
@@ -82,6 +81,66 @@ body{
                 height: 200px;
                 object-fit: cover; // Asegura que la imagen llene el espacio sin deformarse
                 border-radius: 8px 8px 0 0;
+            }
+        }
+    }
+}
+@media (max-width:500px){
+    nav{
+        #cursos,#calificaciones,#perfil{
+            display: none;
+        }
+    }
+    #contenedorContenido{
+        height: 80%;
+        width: 100%;
+        #contenedorCursos{
+            @include flex;
+            @include flex-direction(column);
+            align-content: center;
+            
+            .card {
+                width: 84%;
+                height: 330px;
+                background-color: #E1FFBB;
+                border-radius: 12px;
+                object-fit: cover;
+                .card-section {
+                    padding-left: 20px;
+                    #barraProgreso{
+                        @include flex;
+                        gap: 10px;
+                        align-items: center;
+                        .progress{
+                            width: 80%;
+                            border-radius: 10px;
+                        }
+                        .progress-meter {
+                            background-color: #35c1b7; /* Color de la barra de progreso */
+                            border-radius: 10px; /* Bordes redondeados para la barra */
+                        }
+                        .progress-text {
+                            text-align: center; 
+                            color:#3faea7;
+                        }
+                    }
+                    h2{
+                        color: #27928b;
+                    }
+                    p{
+                        font-size: 20px;
+                        color: #27928b;
+                    }
+                    h3{
+                        font-size: 20px;
+                    }
+                }
+                img {
+                    width: 100%;
+                    height: 150px;
+                    object-fit: cover;
+                    border-radius: 8px 8px 0 0;
+                }
             }
         }
     }
