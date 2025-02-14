@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /* 83% */
 nav {
+  z-index: 1000;
   display: flex;
   height: 20%;
   position: sticky;
@@ -130,6 +131,16 @@ footer #redesSociales {
   padding-right: 80px;
 }
 
+@media (max-width: 500px) {
+  footer #texto {
+    font-size: 15px;
+  }
+  footer #redesSociales {
+    display: flex;
+    gap: 10px;
+    padding-right: 10px;
+  }
+}
 /**
  * Foundation for Sites
  * Version 6.9.0

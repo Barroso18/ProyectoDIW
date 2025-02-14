@@ -1,3 +1,4 @@
+
 footer{
     background-color: #021551;
     height: 90px;
@@ -23,4 +24,18 @@ footer{
         
     }
 
+}
+@media (max-width:500px){
+    footer{
+        
+        #texto{
+            font-size: 15px;
+        }
+        #redesSociales{
+            display: flex;
+            gap: 10px;
+            padding-right: 10px;
+            
+        }
+    }
 }
