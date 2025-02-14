@@ -1,11 +1,11 @@
 @import '_variables_colores';
-@import '../node_modules/foundation-sites/scss/foundation.scss';
-@import '../node_modules/foundation-icons/foundation-icons.css';
-@include foundation-everything;
 @import '_menu_superior';
 @import '_contenido_tema';
 @import '_contenido_asignatura';
 @import '_footer';
+@import '../node_modules/foundation-sites/scss/foundation.scss';
+@import '../node_modules/foundation-icons/foundation-icons.css';
+@include foundation-everything;
 body{
     display: flex;
     width: 100%;
@@ -17,4 +17,21 @@ body{
 footer{
     position: relative;
     width: 100%;
+}
+#barraProgreso{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    .progress{
+        width: 80%;
+        border-radius: 10px;
+    }
+    .progress-meter {
+        background-color: #35c1b7; /* Color de la barra de progreso */
+        border-radius: 10px; /* Bordes redondeados para la barra */
+    }
+    .progress-text {
+        text-align: center; 
+        color:#3faea7;
+    }
 }
