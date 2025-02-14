@@ -29,6 +29,7 @@ nav {
         display: flex;
         text-align: center;
         justify-content: center;
+        align-items: center;
         display: flex;
         height: 100%;
         li{
@@ -109,6 +110,13 @@ nav {
               }
             }
             /* FIN ICONO CAMPANA */
+
+            /* ICONO POWER PARA LOGOUT*/
+            .fi-power,.large{
+              display: flex;
+              font-size: 32px;
+              color: #a5a5b0; 
+            }
         }
     }
     

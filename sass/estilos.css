@@ -6,6 +6,7 @@
  * https://get.foundation
  * Licensed under MIT Open Source
  */
+@import '../node_modules/foundation-icons/foundation-icons.css';
 @media print, screen and (min-width: 40em) {
   .reveal.large, .reveal.small, .reveal.tiny, .reveal {
     right: auto;
@@ -6377,6 +6378,7 @@ nav ul {
   display: flex;
   text-align: center;
   justify-content: center;
+  align-items: center;
   display: flex;
   height: 100%;
 }
@@ -6393,6 +6395,7 @@ nav ul li {
   /* ------ Hide the default checkbox ------ */
   /* ------ Animation ------ */
   /* FIN ICONO CAMPANA */
+  /* ICONO POWER PARA LOGOUT*/
 }
 nav ul li a {
   display: flex;
@@ -6451,6 +6454,11 @@ nav ul li .container input {
   75% {
     transform: rotate(15deg);
   }
+}
+nav ul li .fi-power, nav ul li .large {
+  display: flex;
+  font-size: 32px;
+  color: #a5a5b0;
 }
 
 /* 83% */
