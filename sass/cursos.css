@@ -31,6 +31,7 @@ nav ul {
   display: flex;
   text-align: center;
   justify-content: center;
+  align-items: center;
   display: flex;
   height: 100%;
 }
@@ -47,6 +48,7 @@ nav ul li {
   /* ------ Hide the default checkbox ------ */
   /* ------ Animation ------ */
   /* FIN ICONO CAMPANA */
+  /* ICONO POWER PARA LOGOUT*/
 }
 nav ul li a {
   display: flex;
@@ -105,6 +107,11 @@ nav ul li .container input {
   75% {
     transform: rotate(15deg);
   }
+}
+nav ul li .fi-power, nav ul li .large {
+  display: flex;
+  font-size: 32px;
+  color: #a5a5b0;
 }
 
 footer {
@@ -6533,6 +6540,9 @@ body {
 }
 #contenedorContenido #contenedorCursos .card .card-section {
   padding-left: 20px;
+}
+#contenedorContenido #contenedorCursos .card .card-section span {
+  color: black;
 }
 #contenedorContenido #contenedorCursos .card .card-section #barraProgreso {
   display: flex;

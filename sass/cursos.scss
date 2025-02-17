@@ -49,6 +49,9 @@ body{
            
             .card-section {
                 padding-left: 20px;
+                span{
+                    color: black;
+                }
                 #barraProgreso{
                     display: flex;
                     gap: 10px;
