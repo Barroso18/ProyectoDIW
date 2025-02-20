@@ -1,6 +1,7 @@
-
+@import "../node_modules/foundation-sites/scss/util/util"; 
+@import "../node_modules/foundation-sites/scss/util/flex";
 body {
-    display: flex;
+    @include flex;
     background-color: #001A6E;
     justify-content: center;
     align-items: center;
@@ -12,8 +13,8 @@ body {
     width: 50%; /* Ocupa todo el ancho disponible */
     height: 80%;
     background-color: #6296D9;
-    display: flex;
-    flex-direction: column;
+    @include flex;
+    @include flex-direction(column);
     justify-content: center;
     align-items: center;
     padding: 20px;
@@ -22,8 +23,8 @@ body {
     border-radius: 10px;
     #contenedorInicio{
         color: white;
-        display: flex;
-        flex-direction: column;
+        @include flex;
+        @include flex-direction(column);
         align-items: center;
         gap: 10px;
         padding-bottom: 60px;
@@ -47,8 +48,8 @@ body {
             }
         }
         #introducirDatos{
-            display: flex;
-            flex-direction: column;
+            @include flex;
+            @include flex-direction(column);
             gap:20px;
             label{
                 font-size: 20px;
