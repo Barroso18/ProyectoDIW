@@ -19933,6 +19933,19 @@ html.is-reveal-open body {
   width: 70%;
   align-items: flex-start;
 }
+.contenido .cabecera .textocabecera button {
+  justify-content: left;
+  background-color: #ebffd2;
+  height: 50px;
+  width: auto;
+  padding: 10px;
+  border-radius: 10px;
+}
+.contenido .cabecera .textocabecera button .fi-volume {
+  display: flex;
+  font-size: 32px;
+  color: #a5a5b0;
+}
 .contenido .temario {
   display: flex;
   width: 100%;
