@@ -3,6 +3,7 @@
 @import '../node_modules/foundation-sites/scss/foundation.scss';
 @import '../node_modules/foundation-sites/scss/util/util';
 @import '../node_modules/foundation-sites/scss/components/card';
+@import '../node_modules/foundation-icons/foundation-icons.css';
 @include foundation-everything;
 
 *{
@@ -94,11 +95,6 @@
 
 
 @media (max-width:500px){
-    nav{
-        #cursos,#calificaciones,#perfil{
-            display: none;
-        }
-    }
     #contenedorContenido{
         height: 80%;
         width: 100%;

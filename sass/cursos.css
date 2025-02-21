@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /* 83% */
+@import '../node_modules/foundation-icons/foundation-icons.css';
 nav {
   z-index: 1000;
   display: flex;
@@ -56,14 +57,14 @@ nav ul li a {
   align-items: center;
   color: black;
   text-decoration: none;
-  padding: 15px 20px;
+  padding: 10px 20px;
   transition: background-color 0.3s ease;
 }
 nav ul li a:hover {
   background-color: #27928b;
 }
 nav ul li .container {
-  --color: #a5a5b0;
+  --color: #292929;
   --size: 25px;
   display: flex;
   justify-content: center;
@@ -111,9 +112,20 @@ nav ul li .container input {
 nav ul li .fi-power, nav ul li .large {
   display: flex;
   font-size: 32px;
-  color: #a5a5b0;
+  color: #292929;
 }
 
+@media (max-width: 500px) {
+  nav ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    padding: 10px 10px;
+    transition: background-color 0.3s ease;
+  }
+}
 footer {
   background-color: #021551;
   height: 90px;
@@ -6579,9 +6591,6 @@ html.is-reveal-open body {
 }
 
 @media (max-width: 500px) {
-  nav #cursos, nav #calificaciones, nav #perfil {
-    display: none;
-  }
   #contenedorContenido {
     height: 80%;
     width: 100%;
