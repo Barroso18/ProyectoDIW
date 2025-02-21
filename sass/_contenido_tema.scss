@@ -95,8 +95,30 @@
                         justify-content: space-between;
                         
                     }
+                    .videoJava{
+                        width:560px;
+                         height:315px;
+                    }
                 }
             }
+        }
+    }
+}
+@media (max-width:500px){
+    .contenido {
+        .cabecera{
+            
+            flex-direction: column;
+            .imagencabecera_tema{
+                width: 100%;
+            }
+            .textocabecera{
+                width: 100%;
+            }
+        }
+        .contenidoTema .seccion ul li .videoJava{
+        width:150px;
+         height: 80px ;
         }
     }
 }

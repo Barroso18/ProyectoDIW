@@ -111,3 +111,19 @@
         }
     }
 }
+
+@media (max-width:500px){
+    .contenido {
+        .cabecera{
+            width: 100%;
+            flex-direction: column;
+            .imagencabecera_asignatura{
+                width: 100%;
+            }
+        }
+        /*.contenidoTema .seccion ul li .videoJava{
+        width:150px;
+         height: 80px ;
+        }*/
+    }
+}
