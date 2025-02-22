@@ -1,5 +1,6 @@
 @import '_menu_superior';
 @import '_footer';
+@import '_variables_colores';
 @import '../node_modules/foundation-sites/scss/foundation.scss';
 @import '../node_modules/foundation-sites/scss/util/util';
 @import '../node_modules/foundation-sites/scss/components/card';
@@ -9,14 +10,15 @@
 *{
     body{
     @include flex;
-    background-color: #001A6E;
+    background-color: $color_fondo_body;
     height: 100%;
     @include flex-direction(column);
     align-items: center;
+    
 }
 #contenedorContenido{
     @include flex;
-    background-color: #6296D9;
+    background-color: $color_fondo_contenido;
     @include flex-direction(column);
     height: 80%;
     width: 80%;
@@ -26,7 +28,7 @@
     border-radius: 10px;
     button{
         justify-content: left;
-        background-color: #ebffd2;
+        background-color: $color_fondo_header;
         height: 50px;
         width: auto;
         padding: 10px;
@@ -36,6 +38,7 @@
         color: white;
         padding-left: 20px ;
         font-size: 40px;
+        text-decoration: underline;
     }
     #contenedorCursos{
         @include flex;
@@ -45,7 +48,7 @@
         
         .card {
             width: calc(24.33% - 20px);
-            background-color: #E1FFBB;
+            background-color: $color_fondo_header;
             border-radius: 12px;
             object-fit: cover;
            
@@ -63,7 +66,7 @@
                         border-radius: 10px;
                     }
                     .progress-meter {
-                        background-color: #35c1b7; /* Color de la barra de progreso */
+                        background-color: $color_barra_progreso; /* Color de la barra de progreso */
                         border-radius: 10px; /* Bordes redondeados para la barra */
                     }
                     .progress-text {
@@ -72,11 +75,11 @@
                     }
                 }
                 h2{
-                    color: #27928b;
+                    color: $color_barra_progreso;
                 }
                 p{
                     font-size: 20px;
-                    color: #27928b;
+                    color: $color_barra_progreso;
                 }
                 h3{
                     font-size: 20px;
@@ -95,57 +98,55 @@
 
 
 @media (max-width:500px){
-    #contenedorContenido{
-        height: 80%;
-        width: 100%;
-        #contenedorCursos{
-            @include flex;
-            @include flex-direction(column);
-            align-content: center;
-            
-            .card {
-                width: 84%;
-                height: 330px;
-                background-color: #E1FFBB;
-                border-radius: 12px;
-                object-fit: cover;
-                .card-section {
-                    padding-left: 20px;
-                    #barraProgreso{
-                        @include flex;
-                        gap: 10px;
-                        align-items: center;
-                        .progress{
-                            width: 80%;
-                            border-radius: 10px;
-                        }
-                        .progress-meter {
-                            background-color: #35c1b7; /* Color de la barra de progreso */
-                            border-radius: 10px; /* Bordes redondeados para la barra */
-                        }
-                        .progress-text {
-                            text-align: center; 
-                            color:#3faea7;
-                        }
-                    }
-                    h2{
-                        color: #27928b;
-                    }
-                    p{
-                        font-size: 20px;
-                        color: #27928b;
-                    }
-                    h3{
-                        font-size: 20px;
-                    }
-                }
-                img {
-                    width: 100%;
-                    height: 150px;
+    body{
+        overflow-x: hidden;
+        #contenedorContenido{
+            height: 80%;
+            width: 100%;
+            #contenedorCursos{
+                @include flex-direction(column);
+                align-content: center;
+                
+                .card {
+                    width: 84%;
+                    height: 330px;
+                    border-radius: 12px;
                     object-fit: cover;
-                    border-radius: 8px 8px 0 0;
+                    .card-section {
+                        padding-left: 20px;
+                        #barraProgreso{
+                            @include flex;
+                            gap: 10px;
+                            align-items: center;
+                            .progress{
+                                width: 80%;
+                                border-radius: 10px;
+                            }
+                            .progress-meter { 
+                                border-radius: 10px;
+                            }
+                            .progress-text {
+                                text-align: center; 
+                                
+                            }
+                        }
+                        p{
+                            font-size: 20px;
+                            
+                        }
+                        h3{
+                            font-size: 20px;
+                        }
+                    }
+                    img {
+                        width: 100%;
+                        height: 150px;
+                        object-fit: cover;
+                        border-radius: 8px 8px 0 0;
+                    }
                 }
             }
         }
     }
+    
 }

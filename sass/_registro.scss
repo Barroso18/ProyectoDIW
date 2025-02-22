@@ -2,7 +2,7 @@
 @import "../node_modules/foundation-sites/scss/util/flex";
 body {
     @include flex;
-    background-color: #001A6E;
+    background-color: $color_fondo_body;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -12,7 +12,7 @@ body {
 #contenedorPrincipalRegistro {
     width: 50%; 
     height: 90%;
-    background-color: #6296D9;
+    background-color: $color_fondo_contenido;
     @include flex;
     @include flex-direction(column);
     justify-content: center;
@@ -35,7 +35,7 @@ body {
             button{
                 width: 150px;
                 height: 40px;
-                background-color: #E1FFBB;
+                background-color: $color_fondo_header;
                 border-radius: 10px;
             }
     
@@ -60,7 +60,7 @@ body {
             @include flex-direction(column);
             gap:10px;
             div{
-                display: flex;
+                @include flex;
                 align-items: center;
                 gap: 10px;
             }
@@ -75,7 +75,7 @@ body {
                width: 400px;
                height: 30px;
                background-color: #91ece6;
-               color: #069e94;
+               color: black;
                z-index: 1;
                &::placeholder {
                 color: #069e94;
@@ -105,7 +105,7 @@ body {
 }
 @media (max-width:500px){
     #contenedorPrincipalRegistro {
-        background-color: #6296D9;
+        background-color: $color_fondo_contenido;
         width: 80%; /* Ocupa todo el ancho disponible */
         height: 100%;
         #contenedorRegistro{
