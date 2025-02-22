@@ -11,7 +11,7 @@ body {
 
 #contenedorPrincipalRegistro {
     width: 50%; 
-    height: 80%;
+    height: 90%;
     background-color: #6296D9;
     @include flex;
     @include flex-direction(column);
@@ -28,8 +28,8 @@ body {
         align-items: center;
         gap: 10px;
         h2{
-            font-size: 45px;
-            padding-bottom: 10px;
+            font-size: 35px;
+            
         }
         a{
             button{
@@ -41,8 +41,8 @@ body {
     
         }
         #contenedorLogo {
-            width: 300px; /* Ajusta el tamaño del logo */
-            height: 300px;
+            width: 250px; /* Ajusta el tamaño del logo */
+            height: 250px;
             border-radius: 50%;
             overflow: hidden;
             @include flex;
@@ -59,8 +59,83 @@ body {
             @include flex;
             @include flex-direction(column);
             gap:10px;
+            div{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
             label{
                 font-size: 20px;
+                width: 120px; // Ancho fijo para todos los labels
+                text-align: right;
+                
+            }
+            input{
+                border-radius: 12px;
+               width: 400px;
+               height: 30px;
+               background-color: #91ece6;
+               color: #069e94;
+               z-index: 1;
+               &::placeholder {
+                color: #069e94;
+                font-size: 15px;
+                padding-left: 10px;
+              }
+                
+            }
+            img{
+                position: absolute;
+                z-index: 2;
+                right: 32.6%;
+            }
+        }
+        
+    }
+    a{
+        button{
+            width: 190px;
+            height: 40px;
+            background-color: #E1FFBB;
+            border-radius: 10px;
+            font-size: 15px;
+        }
+
+    }
+}
+@media (max-width:500px){
+    #contenedorPrincipalRegistro {
+        background-color: #6296D9;
+        width: 80%; /* Ocupa todo el ancho disponible */
+        height: 100%;
+        #contenedorRegistro{
+            h2{
+                font-size: 29px;
+                
+            }
+            #contenedorLogo {
+                width: 230px; /* Ajusta el tamaño del logo */
+                height: 230px;
+                border-radius: 50%;
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+        }
+        #introducirDatos{
+            div {
+                @include flex-direction(column);
+                align-items: flex-start;
+            }
+            label{
+                text-align: left;
+                font-size: 15px;
                 
             }
             input{
@@ -75,54 +150,8 @@ body {
             img{
                 position: absolute;
                 z-index: 2;
-                right: 41%;
-            }
-        }
-        
-    }
-    a{
-        button{
-            width: 190px;
-            height: 40px;
-            background-color: #E1FFBB;
-            border-radius: 10px;
-        }
-
-    }
-}
-@media (max-width:500px){
-    #contenedorPrincipalRegistro {
-        background-color: #6296D9;
-        width: 80%; /* Ocupa todo el ancho disponible */
-        height: 100%;
-        #contenedorRegistro{
-            h2{
-                font-size: 30px;
-                padding-bottom: 10px;
-            }
-            #contenedorLogo {
-                width: 250px; /* Ajusta el tamaño del logo */
-                height: 250px;
-                border-radius: 50%;
-                overflow: hidden;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                
-                img{
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
-        }
-        #introducirDatos{
-            #introducirContraseña{
-                #iconoVerContraseña{
-                    position: absolute;
-                    z-index: 2;
-                    right: 17%;
-                    
-                }
+                right: 15.5%;
+                top:66.8%;
             }
         }
     }
