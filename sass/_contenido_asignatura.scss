@@ -55,6 +55,7 @@
             padding: 2%;
             background-size: cover; /* Para que la imagen cubra todo el fondo */
             background-repeat: no-repeat;
+            background-position: center;
         }
         .textocabecera{
             padding: 2%;
@@ -93,6 +94,7 @@
                     background-image: url(#{$foto});
                     background-size: cover; //Para que la imagen cubra todo el fondo 
                     background-repeat: no-repeat;
+                    background-position: center;
                     border-radius: 20px;
                     width: 200px;
                     height: 200px;
@@ -119,6 +121,23 @@
             flex-direction: column;
             .imagencabecera_asignatura{
                 width: 100%;
+            }
+            .textocabecera{
+                width: 100%;
+            }
+        }
+        .temario{
+            @for $i from 1 through 3 {
+                .tema#{$i}{
+                    flex-direction: column;
+                    .imagentema#{$i} {
+                        width: 100%;
+                        background-position: center;
+                    }
+                    .textoTema{
+                        width: 100%;
+                    }
+                }
             }
         }
         /*.contenidoTema .seccion ul li .videoJava{
