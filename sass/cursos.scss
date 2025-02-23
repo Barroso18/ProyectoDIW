@@ -14,92 +14,96 @@
     height: 100%;
     @include flex-direction(column);
     align-items: center;
-    
-}
-#contenedorContenido{
-    @include flex;
-    background-color: $color_fondo_contenido;
-    @include flex-direction(column);
-    height: 80%;
-    width: 80%;
-    padding: 2%;
-    margin-top: 3%;
-    margin-bottom: 3%;
-    border-radius: 10px;
-    button{
-        justify-content: left;
-        background-color: $color_fondo_header;
-        height: 50px;
-        width: auto;
-        padding: 10px;
-        border-radius: 10px;
-    }
-    h1{
-        color: white;
-        padding-left: 20px ;
-        font-size: 40px;
-        text-decoration: underline;
-    }
-    #contenedorCursos{
+    #contenedorContenido{
         @include flex;
-        flex-wrap: wrap;
-        gap: 50px;
-        justify-content: center;
-        
-        .card {
-            width: calc(24.33% - 20px);
+        background-color: $color_fondo_contenido;
+        @include flex-direction(column);
+        height: 80%;
+        width: 80%;
+        padding: 2%;
+        margin-top: 3%;
+        margin-bottom: 3%;
+        border-radius: 10px;
+        button{
+            
             background-color: $color_fondo_header;
-            border-radius: 12px;
-            object-fit: cover;
-           
-            .card-section {
-                padding-left: 20px;
-                span{
-                    color: black;
-                }
-                #barraProgreso{
-                    display: flex;
-                    gap: 10px;
-                    align-items: center;
-                    .progress{
-                        width: 80%;
-                        border-radius: 10px;
+            height: 50px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        h1{
+            color: white;
+            padding-left: 20px ;
+            font-size: 30px;
+            text-decoration: underline;
+            
+        }
+        #contenedorCursos{
+            @include flex;
+            flex-wrap: wrap;
+            gap: 50px;
+            justify-content: center;
+            
+            .card {
+                width: calc(24.33% - 20px);
+                background-color: $color_fondo_header;
+                border-radius: 12px;
+                object-fit: cover;
+               
+                .card-section {
+                    padding-left: 20px;
+                    h2{
+                        font-weight: bold;
+                        font-size: 30px;
+                        
                     }
-                    .progress-meter {
-                        background-color: $color_barra_progreso; /* Color de la barra de progreso */
-                        border-radius: 10px; /* Bordes redondeados para la barra */
+                    span{
+                        color: black;
                     }
-                    .progress-text {
-                        text-align: center; 
-                        color:#3faea7;
+                    #barraProgreso{
+                        display: flex;
+                        gap: 10px;
+                        align-items: center;
+                        .progress{
+                            width: 80%;
+                            border-radius: 10px;
+                        }
+                        .progress-meter {
+                            background-color: $color_barra_progreso; /* Color de la barra de progreso */
+                            border-radius: 10px; /* Bordes redondeados para la barra */
+                        }
+                        .progress-text {
+                            text-align: center; 
+                            color:#3faea7;
+                        }
+                    }
+                    h2{
+                        color: $color_barra_progreso;
+                    }
+                    p{
+                        font-size: 20px;
+                        color: $color_barra_progreso;
+                    }
+                    h3{
+                        font-size: 20px;
                     }
                 }
-                h2{
-                    color: $color_barra_progreso;
+                img {
+                    width: 100%;
+                    height: 200px;
+                    object-fit: cover; // Asegura que la imagen llene el espacio sin deformarse
+                    border-radius: 8px 8px 0 0;
                 }
-                p{
-                    font-size: 20px;
-                    color: $color_barra_progreso;
-                }
-                h3{
-                    font-size: 20px;
-                }
-            }
-            img {
-                width: 100%;
-                height: 200px;
-                object-fit: cover; // Asegura que la imagen llene el espacio sin deformarse
-                border-radius: 8px 8px 0 0;
             }
         }
     }
-}
+    
 }
 
+}
 
 @media (max-width:500px){
     body{
-        overflow-x: hidden;
         #contenedorContenido{
             height: 80%;
             width: 100%;

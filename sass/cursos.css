@@ -6507,7 +6507,7 @@ html.is-reveal-open body {
   flex-direction: column;
   align-items: center;
 }
-* #contenedorContenido {
+* body #contenedorContenido {
   display: flex;
   background-color: #6296D9;
   flex-direction: column;
@@ -6518,67 +6518,69 @@ html.is-reveal-open body {
   margin-bottom: 3%;
   border-radius: 10px;
 }
-* #contenedorContenido button {
-  justify-content: left;
+* body #contenedorContenido button {
   background-color: #E1FFBB;
   height: 50px;
-  width: auto;
   padding: 10px;
   border-radius: 10px;
 }
-* #contenedorContenido h1 {
+* body #contenedorContenido h1 {
   color: white;
   padding-left: 20px;
-  font-size: 40px;
+  font-size: 30px;
   text-decoration: underline;
 }
-* #contenedorContenido #contenedorCursos {
+* body #contenedorContenido #contenedorCursos {
   display: flex;
   flex-wrap: wrap;
   gap: 50px;
   justify-content: center;
 }
-* #contenedorContenido #contenedorCursos .card {
+* body #contenedorContenido #contenedorCursos .card {
   width: calc(24.33% - 20px);
   background-color: #E1FFBB;
   border-radius: 12px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-* #contenedorContenido #contenedorCursos .card .card-section {
+* body #contenedorContenido #contenedorCursos .card .card-section {
   padding-left: 20px;
 }
-* #contenedorContenido #contenedorCursos .card .card-section span {
+* body #contenedorContenido #contenedorCursos .card .card-section h2 {
+  font-weight: bold;
+  font-size: 30px;
+}
+* body #contenedorContenido #contenedorCursos .card .card-section span {
   color: black;
 }
-* #contenedorContenido #contenedorCursos .card .card-section #barraProgreso {
+* body #contenedorContenido #contenedorCursos .card .card-section #barraProgreso {
   display: flex;
   gap: 10px;
   align-items: center;
 }
-* #contenedorContenido #contenedorCursos .card .card-section #barraProgreso .progress {
+* body #contenedorContenido #contenedorCursos .card .card-section #barraProgreso .progress {
   width: 80%;
   border-radius: 10px;
 }
-* #contenedorContenido #contenedorCursos .card .card-section #barraProgreso .progress-meter {
+* body #contenedorContenido #contenedorCursos .card .card-section #barraProgreso .progress-meter {
   background-color: #35c1b7; /* Color de la barra de progreso */
   border-radius: 10px; /* Bordes redondeados para la barra */
 }
-* #contenedorContenido #contenedorCursos .card .card-section #barraProgreso .progress-text {
+* body #contenedorContenido #contenedorCursos .card .card-section #barraProgreso .progress-text {
   text-align: center;
   color: #3faea7;
 }
-* #contenedorContenido #contenedorCursos .card .card-section h2 {
+* body #contenedorContenido #contenedorCursos .card .card-section h2 {
   color: #35c1b7;
 }
-* #contenedorContenido #contenedorCursos .card .card-section p {
+* body #contenedorContenido #contenedorCursos .card .card-section p {
   font-size: 20px;
   color: #35c1b7;
 }
-* #contenedorContenido #contenedorCursos .card .card-section h3 {
+* body #contenedorContenido #contenedorCursos .card .card-section h3 {
   font-size: 20px;
 }
-* #contenedorContenido #contenedorCursos .card img {
+* body #contenedorContenido #contenedorCursos .card img {
   width: 100%;
   height: 200px;
   -o-object-fit: cover;
@@ -6587,9 +6589,6 @@ html.is-reveal-open body {
 }
 
 @media (max-width: 500px) {
-  body {
-    overflow-x: hidden;
-  }
   body #contenedorContenido {
     height: 80%;
     width: 100%;
