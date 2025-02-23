@@ -20118,20 +20118,20 @@ footer {
   width: 100%;
 }
 
-#barraProgreso {
+.barraProgreso {
   display: flex;
   gap: 10px;
   align-items: center;
 }
-#barraProgreso .progress {
+.barraProgreso .progress {
   width: 80%;
   border-radius: 10px;
 }
-#barraProgreso .progress-meter {
+.barraProgreso .progress-meter {
   background-color: #35c1b7; /* Color de la barra de progreso */
   border-radius: 10px; /* Bordes redondeados para la barra */
 }
-#barraProgreso .progress-text {
+.barraProgreso .progress-text {
   text-align: center;
   color: #3faea7;
 }/*# sourceMappingURL=estilos.css.map */
