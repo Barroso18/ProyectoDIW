@@ -1,5 +1,6 @@
 @import "../node_modules/foundation-sites/scss/util/util"; 
 @import "../node_modules/foundation-sites/scss/util/flex";
+@import '_variables_colores';
 body {
     @include flex;
     background-color: $color_fondo_body;
@@ -74,20 +75,25 @@ body {
                 border-radius: 12px;
                width: 400px;
                height: 30px;
-               background-color: #91ece6;
+               background-color:$color_input_fondo;
                color: black;
                z-index: 1;
                &::placeholder {
-                color: #069e94;
+                color: $color_input_fuente;
                 font-size: 15px;
                 padding-left: 10px;
               }
                 
+            }#contraseña{
+                gap:0px;
+                input{
+                    width: 352px;
+                }
+                
             }
             img{
-                position: absolute;
-                z-index: 2;
-                right: 32.6%;
+                width:38px;
+                margin-left: 10px;
             }
         }
         
@@ -96,7 +102,7 @@ body {
         button{
             width: 190px;
             height: 40px;
-            background-color: #E1FFBB;
+            background-color:$color_fondo_header;
             border-radius: 10px;
             font-size: 15px;
         }
@@ -113,21 +119,6 @@ body {
                 font-size: 29px;
                 
             }
-            #contenedorLogo {
-                width: 230px; /* Ajusta el tamaño del logo */
-                height: 230px;
-                border-radius: 50%;
-                overflow: hidden;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                
-                img{
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
-        }
         #introducirDatos{
             div {
                 @include flex-direction(column);
@@ -142,16 +133,20 @@ body {
                 border-radius: 12px;
                width: 300px;
                height: 30px;
-               background-color: #91ece6;
-               color: #069e94;
+               background-color:$color_input_fondo;
                z-index: 1;
                 
             }
+            #contraseña{
+                flex-direction: row;
+                gap:0px;
+                input{
+                    width: 252px;
+                }
+            }
             img{
-                position: absolute;
-                z-index: 2;
-                right: 15.5%;
-                top:66.8%;
+                width: 38px;
+                margin-left: 10px;
             }
         }
     }

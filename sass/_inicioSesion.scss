@@ -1,5 +1,6 @@
 @import "../node_modules/foundation-sites/scss/util/util"; 
 @import "../node_modules/foundation-sites/scss/util/flex";
+@import '_variables_colores';
 body {
     @include flex;
     background-color: $color_fondo_body;
@@ -52,7 +53,7 @@ body {
             @include flex-direction(column);
             gap:20px;
             div{
-                display: flex;
+                @include flex;
                 align-items: center;
                 gap: 10px;
             }
@@ -65,20 +66,27 @@ body {
                 border-radius: 12px;
                width: 400px;
                height: 30px;
-               background-color: #91ece6;
-               color: #069e94;
+               background-color: $color_input_fondo;
+               color: black;
                z-index: 1;
+               font-size: 15px;
                &::placeholder {
-                color: #069e94;
+                color: $color_input_fuente;
                 font-size: 15px;
                 padding-left: 10px;
               }
                 
+            }#contraseña{
+                gap:0px;
+                input{
+                    width: 352px;
+                }
+                
             }
                 img{
-                    position: absolute;
-                    z-index: 2;
-                    right: 32.6%;
+                    width:38px;
+                    margin-left: 10px;
+
                 }
             
         }
@@ -112,7 +120,7 @@ body {
                 height: 230px;
                 border-radius: 50%;
                 overflow: hidden;
-                display: flex;
+                @include flex;
                 justify-content: center;
                 align-items: center;
                 
@@ -135,16 +143,20 @@ body {
                 border-radius: 12px;
                width: 300px;
                height: 30px;
-               background-color: #91ece6;
-               color: #069e94;
+               background-color: $color_input_fondo;
                z-index: 1;
                 
             }
+            #contraseña{
+                @include flex-direction(row);
+                gap:0px;
+                input{
+                    width: 252px;
+                }
+            }
             img{
-                position: absolute;
-                z-index: 2;
-                right: 15.5%;
-                top:68.8%;
+                width: 38px;
+                margin-left: 10px;
                 
             }
 

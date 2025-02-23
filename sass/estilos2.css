@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* 83% */
 body {
   display: flex;
   background-color: #001A6E;
@@ -66,8 +67,9 @@ body {
   width: 400px;
   height: 30px;
   background-color: #91ece6;
-  color: #069e94;
+  color: black;
   z-index: 1;
+  font-size: 15px;
 }
 #contenedorPrincipalInicio #contenedorInicio #introducirDatos input::-moz-placeholder {
   color: #069e94;
@@ -79,10 +81,15 @@ body {
   font-size: 15px;
   padding-left: 10px;
 }
+#contenedorPrincipalInicio #contenedorInicio #introducirDatos #contraseña {
+  gap: 0px;
+}
+#contenedorPrincipalInicio #contenedorInicio #introducirDatos #contraseña input {
+  width: 352px;
+}
 #contenedorPrincipalInicio #contenedorInicio #introducirDatos img {
-  position: absolute;
-  z-index: 2;
-  right: 32.6%;
+  width: 38px;
+  margin-left: 10px;
 }
 #contenedorPrincipalInicio a button {
   width: 150px;
@@ -132,16 +139,21 @@ body {
     width: 300px;
     height: 30px;
     background-color: #91ece6;
-    color: #069e94;
     z-index: 1;
   }
+  #contenedorPrincipalInicio #contenedorInicio #introducirDatos #contraseña {
+    flex-direction: row;
+    gap: 0px;
+  }
+  #contenedorPrincipalInicio #contenedorInicio #introducirDatos #contraseña input {
+    width: 252px;
+  }
   #contenedorPrincipalInicio #contenedorInicio #introducirDatos img {
-    position: absolute;
-    z-index: 2;
-    right: 15.5%;
-    top: 68.8%;
+    width: 38px;
+    margin-left: 10px;
   }
 }
+/* 83% */
 body {
   display: flex;
   background-color: #001A6E;
@@ -215,7 +227,7 @@ body {
   width: 400px;
   height: 30px;
   background-color: #91ece6;
-  color: #069e94;
+  color: black;
   z-index: 1;
 }
 #contenedorPrincipalRegistro #contenedorRegistro #introducirDatos input::-moz-placeholder {
@@ -228,10 +240,15 @@ body {
   font-size: 15px;
   padding-left: 10px;
 }
+#contenedorPrincipalRegistro #contenedorRegistro #introducirDatos #contraseña {
+  gap: 0px;
+}
+#contenedorPrincipalRegistro #contenedorRegistro #introducirDatos #contraseña input {
+  width: 352px;
+}
 #contenedorPrincipalRegistro #contenedorRegistro #introducirDatos img {
-  position: absolute;
-  z-index: 2;
-  right: 32.6%;
+  width: 38px;
+  margin-left: 10px;
 }
 #contenedorPrincipalRegistro a button {
   width: 190px;
@@ -250,21 +267,6 @@ body {
   #contenedorPrincipalRegistro #contenedorRegistro h2 {
     font-size: 29px;
   }
-  #contenedorPrincipalRegistro #contenedorRegistro #contenedorLogo {
-    width: 230px; /* Ajusta el tamaño del logo */
-    height: 230px;
-    border-radius: 50%;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  #contenedorPrincipalRegistro #contenedorRegistro #contenedorLogo img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
   #contenedorPrincipalRegistro #contenedorRegistro #introducirDatos div {
     flex-direction: column;
     align-items: flex-start;
@@ -278,14 +280,18 @@ body {
     width: 300px;
     height: 30px;
     background-color: #91ece6;
-    color: #069e94;
     z-index: 1;
   }
+  #contenedorPrincipalRegistro #contenedorRegistro #introducirDatos #contraseña {
+    flex-direction: row;
+    gap: 0px;
+  }
+  #contenedorPrincipalRegistro #contenedorRegistro #introducirDatos #contraseña input {
+    width: 252px;
+  }
   #contenedorPrincipalRegistro #contenedorRegistro #introducirDatos img {
-    position: absolute;
-    z-index: 2;
-    right: 15.5%;
-    top: 66.8%;
+    width: 38px;
+    margin-left: 10px;
   }
 }
 /* 83% *//*# sourceMappingURL=estilos2.css.map */
